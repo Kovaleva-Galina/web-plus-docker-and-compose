@@ -22,6 +22,8 @@ services:
       context: ./frontend
     ports:
       - "8081:80"
+    env_file:
+      - ./frontend/.env
     depends_on:
       backend:
         condition: service_started
