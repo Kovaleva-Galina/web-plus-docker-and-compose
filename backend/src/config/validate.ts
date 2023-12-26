@@ -8,7 +8,7 @@ class EnvironmentVariables {
 
   @IsOptional()
   @IsString()
-  DATABASE_HOST!: string;
+  POSTGRES_HOST!: string;
 
   @IsOptional()
   @IsNumber()
@@ -16,11 +16,11 @@ class EnvironmentVariables {
 
   @IsOptional()
   @IsString()
-  DATABASE_USERNAME!: string;
+  POSTGRES_USER!: string;
 
   @IsOptional()
   @IsString()
-  DATABASE_PASSWORD!: string;
+  POSTGRES_PASSWORD!: string;
 
   @IsOptional()
   @IsString()
@@ -28,7 +28,7 @@ class EnvironmentVariables {
 
   @IsOptional()
   @IsString()
-  DATABASE_NAME!: string;
+  POSTGRES_DB!: string;
 
   @IsOptional()
   @IsNumber()

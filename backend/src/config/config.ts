@@ -19,14 +19,14 @@ export default (): Config => ({
   jwtSecret: process.env.JWT_SECRET || 'my_test_secret_key',
   port: process.env.PORT ? parseInt(process.env.PORT) : 3001,
   database: {
-    host: process.env.DATABASE_HOST || 'localhost',
+    host: process.env.POSTGRES_HOST || 'localhost',
     port: process.env.DATABASE_PORT
       ? parseInt(process.env.DATABASE_PORT)
       : 5432,
-    username: process.env.DATABASE_USERNAME || 'student',
-    password: process.env.DATABASE_PASSWORD || 'student',
+    username: process.env.POSTGRES_USER || 'student',
+    password: process.env.POSTGRES_PASSWORD || 'student',
     type: process.env.DATABASE_TYPE || 'postgres',
-    database: process.env.DATABASE_NAME || 'kupipodariday',
+    database: process.env.POSTGRES_DB || 'kupipodariday',
   },
   throttler: {
     ttl: process.env.THROTTLER_TTL
