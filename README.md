@@ -1,3 +1,5 @@
 # Докеризация приложения
 
-Перед тем как приступить к выполнению проектной работы разместите в репозитории исходный код фронтенд и бэкенд частей сервиса КупиПодариДай, реализованного вами ранее. 
+- IP адрес 158.160.134.118
+- Frontend https://galina.kovaleva.kupi.nomoredomainsmonster.ru
+- Backend https://api.galina.kovaleva.kupi.nomoredomainsmonster.ru
