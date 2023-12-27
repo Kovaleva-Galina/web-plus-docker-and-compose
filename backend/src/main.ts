@@ -10,6 +10,8 @@ async function bootstrap() {
     bufferLogs: true,
   });
   const config = app.get(ConfigService);
+  console.log('===========================================================================');
+  console.log('config', config);
   app.useGlobalPipes(new ValidationPipe({ transform: true }));
   app.useLogger(app.get(WINSTON_MODULE_NEST_PROVIDER));
   await app.listen(config.get('port'));
